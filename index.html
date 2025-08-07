@@ -137,32 +137,26 @@
       <li>Get actionable daily tips and content ideas</li>
     </ul>
 
-    <form id="signup-form" action="https://your-mailing-list-service.com/subscribe" method="POST" aria-label="Sign up form" onsubmit="handleSubmit(event)">
-  <input type="email" name="email" placeholder="Enter your email address" required aria-required="true" />
-  <button type="submit">Claim Your Free Spot Now</button>
-</form>
+  <div style="text-align: center;">
+  <input type="email" id="user-email" placeholder="Enter your email address" required style="padding: 0.75rem; width: 70%; max-width: 400px; margin-bottom: 1rem;" />
+  <br />
+  <button onclick="redirectToLocker()" style="padding: 0.75rem 1.5rem; font-size: 1.1rem; background: #0a47a1; color: white; border: none; border-radius: 4px; cursor: pointer;">
+    Claim Your Free Spot Now
+  </button>
+</div>
 
 <script>
-  function handleSubmit(event) {
-    event.preventDefault(); // prevent default form submission
+  function redirectToLocker() {
+    const email = document.getElementById('user-email').value;
+    if (!email) {
+      alert('Please enter your email address first.');
+      return;
+    }
 
-    const form = event.target;
-    const formData = new FormData(form);
-
-    fetch(form.action, {
-      method: 'POST',
-      body: formData,
-    })
-    .then(response => {
-      // After successful email submission, redirect to CPA Grip locker URL
-      window.location.href = 'https://installyourfiles.com/1833333';
-    })
-    .catch(error => {
-      alert('Oops, something went wrong. Please try again.');
-    });
+    // 🔁 Replace this with your actual CPA Grip locker URL:
+    window.location.href = "https://installyourfiles.com/1833333";
   }
 </script>
-
     <p class="trust">We respect your privacy. No spam. Unsubscribe anytime.</p>
 
     <div class="testimonial" aria-label="Testimonial">
@@ -186,5 +180,6 @@
   -->
 </body>
 </html>
+
 
 
