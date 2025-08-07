@@ -137,10 +137,31 @@
       <li>Get actionable daily tips and content ideas</li>
     </ul>
 
-    <form action="https://your-mailing-list-service.com/subscribe" method="POST" aria-label="Sign up form">
-      <input type="email" name="email" placeholder="Enter your email address" required aria-required="true" />
-      <button type="submit">Claim Your Free Spot Now</button>
-    </form>
+    <form id="signup-form" action="https://your-mailing-list-service.com/subscribe" method="POST" aria-label="Sign up form" onsubmit="handleSubmit(event)">
+  <input type="email" name="email" placeholder="Enter your email address" required aria-required="true" />
+  <button type="submit">Claim Your Free Spot Now</button>
+</form>
+
+<script>
+  function handleSubmit(event) {
+    event.preventDefault(); // prevent default form submission
+
+    const form = event.target;
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: 'POST',
+      body: formData,
+    })
+    .then(response => {
+      // After successful email submission, redirect to CPA Grip locker URL
+      window.location.href = 'https://cpagrip.com/locker?offer_id=YOUR_OFFER_ID';
+    })
+    .catch(error => {
+      alert('Oops, something went wrong. Please try again.');
+    });
+  }
+</script>
 
     <p class="trust">We respect your privacy. No spam. Unsubscribe anytime.</p>
 
@@ -165,3 +186,4 @@
   -->
 </body>
 </html>
+
