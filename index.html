@@ -2,107 +2,166 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Free Digital Marketing Class</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Free Digital Marketing Masterclass | Grow Your Instagram & TikTok</title>
+  <meta name="description" content="Join our free digital marketing masterclass and learn proven strategies to grow your Instagram and TikTok. Reserve your spot now!" />
   <style>
-    body {
+    /* Reset */
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      color: #222;
+      padding: 0;
     }
-
-    .container {
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f7f9fc;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex-grow: 1;
       max-width: 700px;
-      margin: auto;
-      padding: 30px 20px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgb(0 0 0 / 0.1);
+    }
+    h1 {
+      color: #0a47a1;
+      font-size: 2.25rem;
+      margin-bottom: 0.5rem;
       text-align: center;
     }
-
-    .header {
-      background: linear-gradient(to right, #1a2980, #26d0ce);
-      color: white;
-      padding: 40px 20px;
-      border-radius: 10px;
+    p.subtitle {
+      text-align: center;
+      font-size: 1.125rem;
+      color: #555;
+      margin-bottom: 2rem;
     }
-
-    .header h1 {
-      margin: 0 0 20px;
-    }
-
-    .header p {
-      font-size: 1.1em;
-    }
-
-    .media {
-      margin: 30px 0;
-    }
-
-    .media img, .media iframe {
-      width: 100%;
+    img.hero {
+      display: block;
       max-width: 100%;
-      border-radius: 10px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #ff7f50;
-      color: white;
-      padding: 15px 25px;
-      font-size: 1.2em;
-      border: none;
+      margin: 0 auto 2rem;
       border-radius: 8px;
-      text-decoration: none;
-      margin-top: 20px;
+    }
+    ul.benefits {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+      margin-bottom: 2rem;
+      color: #333;
+    }
+    ul.benefits li {
+      margin-bottom: 0.75rem;
+      font-size: 1.1rem;
+    }
+    form {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    input[type="email"] {
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      width: 80%;
+      max-width: 400px;
+      border: 2px solid #0a47a1;
+      border-radius: 4px 0 0 4px;
+      outline: none;
+    }
+    input[type="email"]:focus {
+      border-color: #074080;
+    }
+    button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1.1rem;
+      background: #0a47a1;
+      color: white;
+      border: none;
       cursor: pointer;
+      border-radius: 0 4px 4px 0;
       transition: background 0.3s ease;
     }
-
-    .btn:hover {
-      background: #e86c3f;
+    button:hover {
+      background: #074080;
     }
-
-    .footer {
-      margin-top: 50px;
-      font-size: 0.9em;
+    .trust {
+      font-size: 0.9rem;
       color: #666;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+    .testimonial {
+      margin-top: 2rem;
+      padding: 1rem 1.5rem;
+      background: #e9f0ff;
+      border-left: 6px solid #0a47a1;
+      border-radius: 4px;
+      font-style: italic;
+      color: #0a3a8c;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      padding: 1rem 0;
+      margin-top: auto;
+    }
+    @media (max-width: 480px) {
+      input[type="email"] {
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+      }
+      button {
+        width: 100%;
+        border-radius: 4px;
+      }
     }
   </style>
 </head>
 <body>
+  <main>
+    <h1>Unlock Proven Social Media Growth Strategies<br>for Instagram & TikTok — Free Masterclass</h1>
+    <p class="subtitle">Join 5,000+ students who are growing their accounts with our easy step-by-step system</p>
 
-  <div class="container">
-    <div class="header">
-      <h1>🚀 Free Class: Digital Marketing & Social Media Strategy</h1>
-      <p>Learn how to grow on Instagram, TikTok & more — and turn followers into real income.</p>
+    <!-- Replace the src below with an actual course or branding image -->
+    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=700&q=80" alt="Digital marketing masterclass" class="hero" />
+
+    <ul class="benefits">
+      <li>Learn how to create viral Instagram & TikTok content without expensive equipment</li>
+      <li>Understand the secrets behind social media algorithms</li>
+      <li>Boost your followers & engagement organically</li>
+      <li>Get actionable daily tips and content ideas</li>
+    </ul>
+
+    <form action="https://your-mailing-list-service.com/subscribe" method="POST" aria-label="Sign up form">
+      <input type="email" name="email" placeholder="Enter your email address" required aria-required="true" />
+      <button type="submit">Claim Your Free Spot Now</button>
+    </form>
+
+    <p class="trust">We respect your privacy. No spam. Unsubscribe anytime.</p>
+
+    <div class="testimonial" aria-label="Testimonial">
+      “This masterclass transformed my Instagram growth. Highly recommended!” — Sarah J.
     </div>
+  </main>
 
-    <div class="media">
-    
-      <!-- Example Video Embed: -->
-      <!-- <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe> -->
+  <footer>
+    &copy; 2025 Digital Growth Academy &bull; Designed with ❤️
+  </footer>
 
-      <!-- Example Image -->
-      
-    </div>
-
-    <p style="font-size: 1.1em;">This masterclass is 100% free for a limited time.</p>
-
-    <!-- 👇 CHANGE THIS TO YOUR CPA GRIP LOCKER URL 👇 -->
-    <a href="https://installyourfiles.com/1833333" class="btn">Reserve My Spot Now</a>
-
-    <div class="footer">
-      <p>© 2025 Digital Growth Academy. All rights reserved.</p>
-      <p>This offer is available for a limited time only.</p>
-    </div>
-  </div>
-
+  <!-- Analytics tracking script placeholder (e.g., Google Analytics) -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+  -->
 </body>
-
 </html>
-
-
-
-
-
-
